@@ -41,7 +41,7 @@ const Pokemons = () => (
           return (
             <StyledCardsContainer>
               {data.pokemons.map(pokemon => (
-                <PokemonCard data={pokemon} />
+                <PokemonCard key={pokemon.number} data={pokemon} />
               ))}
             </StyledCardsContainer>
           );

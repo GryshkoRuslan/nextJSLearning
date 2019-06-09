@@ -8,7 +8,7 @@ const SkillsBlock = ({ specialAttaks }) => (
     <p>Specials Attacks:</p>
     <SkillsContainer>
       {specialAttaks.map(skill => (
-        <Skill>{skill.name}</Skill>
+        <Skill key={skill.name}>{skill.name}</Skill>
       ))}
     </SkillsContainer>
   </div>

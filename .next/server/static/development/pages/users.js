@@ -145,7 +145,20 @@ var Header = function Header() {
       lineNumber: 10
     },
     __self: this
-  }, "Users")));
+  }, "Users")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/pokemons",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_styledItems__WEBPACK_IMPORTED_MODULE_2__["StyledHyperLink"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, "Pokemons")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
@@ -779,22 +792,16 @@ var Users = function Users() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 6
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_styles_styledItems__WEBPACK_IMPORTED_MODULE_2__["GlobalStyle"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 7
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
@@ -806,7 +813,7 @@ var Users = function Users() {
       lineNumber: 9
     },
     __self: this
-  }, "This is a users page")));
+  }, "This is a user page"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Users);
@@ -817,7 +824,7 @@ var Users = function Users() {
 /*!*******************************!*\
   !*** ./styles/styledItems.js ***!
   \*******************************/
-/*! exports provided: StyledWrapperHeader, StyledHyperLink, GlobalStyle */
+/*! exports provided: StyledWrapperHeader, StyledHyperLink, GlobalStyle, StyledCardsContainer, StyledPokemonCard, CardTitle, SkillsContainer, Skill */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -825,13 +832,68 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StyledWrapperHeader", function() { return StyledWrapperHeader; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StyledHyperLink", function() { return StyledHyperLink; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GlobalStyle", function() { return GlobalStyle; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StyledCardsContainer", function() { return StyledCardsContainer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "StyledPokemonCard", function() { return StyledPokemonCard; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CardTitle", function() { return CardTitle; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SkillsContainer", function() { return SkillsContainer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Skill", function() { return Skill; });
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
 
 
+function _templateObject8() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  min-width: 70px;\n  border-radius: 25px;\n  background: rgb(199, 196, 196);\n  text-align: center;\n  margin: 5px;\n  padding: 0 10px;\n  box-sizing: border-box;\n"]);
+
+  _templateObject8 = function _templateObject8() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject7() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  display: flex;\n  justify-content: center;\n  flex-wrap: wrap;\n"]);
+
+  _templateObject7 = function _templateObject7() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject6() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  min-height: 70px;\n  background:rgba(0, 0, 0, 0.7);\n  color: white;\n  font-weight: 700;\n  font-size: 2em;\n  display: flex;\n  align-items: center;\n  padding: 0 10px;\n  margin-bottom: 10px;\n"]);
+
+  _templateObject6 = function _templateObject6() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject5() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px,\n              rgba(0, 0, 0, 0.23) 0px 3px 10px;\n  background: rgb(255, 255, 255);\n  min-height: 300px;\n  width: 90%;\n"]);
+
+  _templateObject5 = function _templateObject5() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject4() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  grid-gap: 30px 0;\n  justify-items: center;\n  margin-bottom: 10px;\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject3() {
-  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  body {\n    margin: 0;\n    padding: 0;\n  }\n  p {\n    font-size: 24px;\n    font-weight: 700;\n  }\n"]);
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  body {\n    margin: 0;\n    padding: 0;\n  }\n  p {\n    font-size: 14px;\n    font-weight: 700;\n    margin: 10px;\n  }\n"]);
 
   _templateObject3 = function _templateObject3() {
     return data;
@@ -865,6 +927,11 @@ function _templateObject() {
 var StyledWrapperHeader = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div(_templateObject());
 var StyledHyperLink = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.a(_templateObject2());
 var GlobalStyle = Object(styled_components__WEBPACK_IMPORTED_MODULE_1__["createGlobalStyle"])(_templateObject3());
+var StyledCardsContainer = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div(_templateObject4());
+var StyledPokemonCard = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div(_templateObject5());
+var CardTitle = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div(_templateObject6());
+var SkillsContainer = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div(_templateObject7());
+var Skill = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div(_templateObject8());
 
 /***/ }),
 

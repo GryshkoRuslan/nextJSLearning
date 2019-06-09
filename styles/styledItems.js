@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { createGlobalStyle } from 'styled-components'
+import styled from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
 export const StyledWrapperHeader = styled.div`
   height: 100px;
@@ -32,7 +32,52 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
   p {
-    font-size: 24px;
+    font-size: 14px;
     font-weight: 700;
+    margin: 10px;
   }
+`;
+
+export const StyledCardsContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px 0;
+  justify-items: center;
+  margin-bottom: 10px;
+`;
+
+export const StyledPokemonCard = styled.div`
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px,
+              rgba(0, 0, 0, 0.23) 0px 3px 10px;
+  background: rgb(255, 255, 255);
+  min-height: 300px;
+  width: 90%;
+`;
+
+export const CardTitle = styled.div`
+  min-height: 70px;
+  background:rgba(0, 0, 0, 0.7);
+  color: white;
+  font-weight: 700;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  margin-bottom: 10px;
+`;
+
+export const SkillsContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+`;
+
+export const Skill = styled.div`
+  min-width: 70px;
+  border-radius: 25px;
+  background: rgb(199, 196, 196);
+  text-align: center;
+  margin: 5px;
+  padding: 0 10px;
+  box-sizing: border-box;
 `;

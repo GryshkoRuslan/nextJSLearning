@@ -9,6 +9,9 @@ const Header = () => (
     <Link href="/users">
       <StyledHyperLink>Users</StyledHyperLink>
     </Link>
+    <Link href="/pokemons">
+      <StyledHyperLink>Pokemons</StyledHyperLink>
+    </Link>
   </StyledWrapperHeader>
 );
 

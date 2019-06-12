@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import { StyledWrapperHeader, StyledHyperLink } from '../styles/styledItems';
+import { indexR } from '../routes';
 
 const Header = () => (
   <StyledWrapperHeader>
-    <Link href="/">
+    <Link {...indexR.linkTo()}>
       <StyledHyperLink>Home</StyledHyperLink>
     </Link>
     <Link href="/users">

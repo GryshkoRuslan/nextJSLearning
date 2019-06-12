@@ -1,12 +1,18 @@
 import Header from "../components/Header";
-import { GlobalStyle, StyledCardsContainer } from "../styles/styledItems";
+import {
+  StyledCardsContainer,
+  StyledPokemonCardWrapper
+} from "../styles/styledItems";
 import PokemonCard from "../components/PokemonCard";
 import { Query } from "react-apollo";
+import Link from "next/link";
 import { gql } from "apollo-boost";
+import { selectedPokemonR } from "../routes";
 
 const GET_POKEMON_INFO = gql`
   {
     pokemons(first: 12) {
+      id
       number
       name
       classification
@@ -29,26 +35,35 @@ const GET_POKEMON_INFO = gql`
   }
 `;
 
-const Pokemons = () => (
-  <React.Fragment>
-    <GlobalStyle />
-    <div>
-      <Header />
-      <Query query={GET_POKEMON_INFO}>
-        {({ loading, error, data }) => {
-          if (loading) return <p>Loading...</p>;
-          if (error) return <p>Error :(</p>;
-          return (
-            <StyledCardsContainer>
-              {data.pokemons.map(pokemon => (
-                <PokemonCard key={pokemon.number} data={pokemon} />
-              ))}
-            </StyledCardsContainer>
-          );
-        }}
-      </Query>
-    </div>
-  </React.Fragment>
-);
+const Pokemons = () => {
+  return (
+    <React.Fragment>
+      <div>
+        <Header />
+        <Query query={GET_POKEMON_INFO}>
+          {({ loading, error, data }) => {
+            if (loading) return <p>Loading...</p>;
+            if (error) return <p>Error :(</p>;
+            return (
+              <StyledCardsContainer>
+                {data.pokemons.map(pokemon => (
+                  <Link
+                    {...selectedPokemonR.linkTo({
+                      id: pokemon.id
+                    })}
+                  >
+                    <StyledPokemonCardWrapper>
+                      <PokemonCard key={pokemon.number} data={pokemon} />
+                    </StyledPokemonCardWrapper>
+                  </Link>
+                ))}
+              </StyledCardsContainer>
+            );
+          }}
+        </Query>
+      </div>
+    </React.Fragment>
+  );
+};
 
 export default Pokemons;

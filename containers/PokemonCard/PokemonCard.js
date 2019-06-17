@@ -2,9 +2,9 @@ import {
   GlobalStyle,
   StyledPokemonCard,
   CardTitle
-} from "../styles/styledItems";
-import SkillsBlock from "./SkillsBlock";
-import { selectedPokemonR } from "../routes";
+} from "../../styles/styledItems";
+import SkillsBlock from "../../components/PokemonCard/SkillsBlock/SkillsBlock";
+import { selectedPokemonR } from "../../routes";
 import Router from 'next/router';
 
 const PokemonCard = ({ data }) => (

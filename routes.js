@@ -5,6 +5,16 @@ export const indexR = defR({
   pattern: "/"
 });
 
+export const usersR = defR({
+  page: "users",
+  pattern: "/users"
+});
+
+export const pokemonsR = defR({
+  page: "pokemons",
+  pattern: "/pokemons"
+});
+
 export const selectedPokemonR = defRP({
   page: "pokemon",
   pattern: "/pokemons/:id",
@@ -17,3 +27,11 @@ export const backToPokemonsPage = defR({
   page: "pokemons",
   pattern: "/pokemons"
 });
+
+export const routes = [
+  indexR,
+  usersR,
+  pokemonsR,
+  selectedPokemonR,
+  backToPokemonsPage
+];

@@ -1,9 +1,9 @@
-import Header from "../components/Header";
+import Header from "../components/Header/Header";
 import {
   StyledCardsContainer,
   StyledPokemonCardWrapper
 } from "../styles/styledItems";
-import PokemonCard from "../components/PokemonCard";
+import PokemonCard from "../containers/PokemonCard/PokemonCard";
 import { Query } from "react-apollo";
 import Link from "next/link";
 import { gql } from "apollo-boost";
@@ -47,13 +47,13 @@ const Pokemons = () => {
             return (
               <StyledCardsContainer>
                 {data.pokemons.map(pokemon => (
-                  <Link
+                  <Link key={pokemon.number}
                     {...selectedPokemonR.linkTo({
                       id: pokemon.id
                     })}
                   >
                     <StyledPokemonCardWrapper>
-                      <PokemonCard key={pokemon.number} data={pokemon} />
+                      <PokemonCard data={pokemon} />
                     </StyledPokemonCardWrapper>
                   </Link>
                 ))}

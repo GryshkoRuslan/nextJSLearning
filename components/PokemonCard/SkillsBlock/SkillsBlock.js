@@ -1,7 +1,7 @@
 import {
   SkillsContainer,
   Skill
-} from "../styles/styledItems";
+} from "../../../styles/styledItems";
 
 const SkillsBlock = ({ specialAttaks }) => (
   <div>

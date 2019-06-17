@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { backToPokemonsPage } from "../routes";
-import { StyledBackButton } from "../styles/styledItems";
+import { backToPokemonsPage } from "../../../routes";
+import { StyledBackButton } from "../../../styles/styledItems";
 
 const BackButton = () => (
   <Link {...backToPokemonsPage.linkTo()}>

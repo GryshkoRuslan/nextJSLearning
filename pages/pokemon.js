@@ -1,5 +1,6 @@
 import { selectedPokemonR } from "../routes";
-import OpenedPokemonCard from "../components/OpenedPokemonCard";
+import OpenedPokemonCard from
+  "../containers/OpenedPokemonCard/OpenedPokemonCard";
 import { Query } from "react-apollo";
 import Link from "next/link";
 import { gql } from "apollo-boost";

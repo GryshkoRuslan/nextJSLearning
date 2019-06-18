@@ -11,7 +11,7 @@ app.prepare().then(() => {
   const server = express();
 
   server.use("/", express.static("./static"));
-
+  
   server.use(rewriteMiddleware(routes));
 
   server.get("*", (req, res) => {
